@@ -1,14 +1,18 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitalise Name</title>
+    <script>
+        function capitalizeInput() {
+            const inputField = document.getElementById("fname");
+            inputField.value = inputField.value.toUpperCase();
+        }
+    </script>
 </head>
 <body>
     <label for="fname">Enter your name:</label>
-    <input type="text" id="fname" maxlength="100">
-    <script src="script.js"></script>
+    <input type="text" id="fname" maxlength="100" onblur="capitalizeInput()">
 </body>
 </html>
- -->
